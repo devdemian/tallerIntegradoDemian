@@ -13,12 +13,9 @@
     <link rel="stylesheet" href="./public/css/menuInicio.css">
 </head>
 
-<?php
-    if(isset($textoContactList)){
-        echo "<script>alert($textoContactList)</script>";
-    }
-?>
+
 <body>
+
     <!-- Secciòn INICIO -->
     <span class="sombra">
         <section id="inicio" class="inicio">
@@ -384,6 +381,11 @@
         <p>Creado por Colega Bot - 2024 - Taller Integración</p>
     </footer>
     <script src="./public/js/app.js"></script>
+<?php
+    if(isset($textoContactList)){
+        echo "<script >alert(\"$textoContactList\");</script>";
+    }
+?>
 
 </body>
 

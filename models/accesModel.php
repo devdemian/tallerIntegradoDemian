@@ -13,7 +13,8 @@ class accesModel
 
     public function acceso($rutUsuario)
     {
-        $consulta = mysqli_query($this->db, "SELECT * FROM perfiles WHERE rut = '$rutUsuario'");
+        //$consulta = mysqli_query($this->db, "SELECT * FROM perfilesc WHERE rut = '$rutUsuario'"); //para hosting de richard, le agrege una c a nombre de tabla perfiles
+        $consulta = mysqli_query($this->db, "SELECT * FROM perfiles WHERE rut = '$rutUsuario'"); // para local
         while ($filas = mysqli_fetch_array($consulta)) {
             $this->usuario[] = $filas;
         }

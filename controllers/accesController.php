@@ -67,8 +67,7 @@ if (isset($_POST['opcion'])) { // en caso de haber una solicitud de tipo POST
         $insersionContacto=false;
         if($usuarioC=='ok'){
             $insersionContacto=true;
-            $textoContactList="Gracias por contactarnos, responderemos tus inquietudes pronto, en tu correo encontraras una copia de tu consulta";
-            require_once('./views/home.php'); // abre home del sitio ya que nohay ninguna solicitud
+            require_once('./controllers/mailerController.php'); // abre home del sitio ya que nohay ninguna solicitud
         }else{
             $textoContactList="ups, hubo un error, intenta nuevamente";
             require_once('./views/home.php'); // abre home del sitio ya que nohay ninguna solicitud
