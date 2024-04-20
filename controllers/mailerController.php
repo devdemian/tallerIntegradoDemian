@@ -32,7 +32,7 @@ try {
 
     //Content email
     $mail->Subject = 'Contacto a colegaBot';
-    $mail->Body    = 'remite: '.$nombre.'<br>'.$texto;
+    $mail->Body    = 'remite: '.$nombre.'\n'.$texto;
 
     $mail->send();
     $textoContactList= 'Gracias '.$nombre.' '.$apellido.' Por contactarnos, hemos recibido tu mensaje, responderemos pronto, Ademas recibiras una copia de tu solicitud en la direccion de correo que indicaste en el formulario.';

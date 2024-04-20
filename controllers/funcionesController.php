@@ -100,6 +100,11 @@ function validarut($rut){
         return "Campo vacio, porfavor digite su RUT";
     }
 }
+function armarPass($rut, $nombre){
+    $iniNombre=$nombre[0];
+    $clave=$rut.$iniNombre;
+    return $clave;
+}
 
 
 

@@ -48,3 +48,31 @@ class userContacto
 
 
 }
+class nuevoUsuario{
+    private $db;
+    private $rut;
+    private $nombre;
+    private $apellidoPaterno;
+    private $apellidoMaterno;
+    private $edad;
+    private $telefono;
+    private $email;
+    private $fecha;
+    private $pass;
+    private $nivelAcceso;
+
+    public function __construct(){
+        require_once("conexion.php");
+        $this->db=Conectarse();
+    }
+    public function insertarNuevoUsuario($arreglo){
+        $arre=$arreglo;
+        $str= mysqli_query($this->db, "INSERT INTO perfiles (rut, pass, nombre, apellidop, apellidom, edad, email, telefono, nivel) VALUES ('".$arre[0]."', '".$arre[1]."', '".$arre[2]."', '".$arre[3]."', '".$arre[4]."', '".$arre[5]."', '".$arre[6]."', '".$arre[7]."', '".$arre[8]."')");
+        if($str == false){
+            $respuestaIngresoNew="Error de Ingreso";
+        }else{
+            $respuestaIngresoNew="ok";
+        }
+        return $respuestaIngresoNew;
+    }
+}

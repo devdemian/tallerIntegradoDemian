@@ -31,6 +31,8 @@
                                     <?php
                                     if(isset($texto)){
                                         echo $texto;
+                                    }elseif (isset($textoRegistro)) {
+                                        echo $textoRegistro;
                                     }
                                     ?>
                                     <form method="POST" action="#">
@@ -49,7 +51,10 @@
                                     </form>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <div class="small"><a href="register.html">¿Necesito una cuenta? ¡Inscribirse!</a></div>
+                                    <form method="post" action="#">
+                                        <input type="hidden" name="opcion" value="desplegarRegistro">
+                                        <button class="btn btn-primary">Eres Nuevo en ColegaBot? Crea Una Cuenta</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

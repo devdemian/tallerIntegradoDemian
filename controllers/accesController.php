@@ -50,6 +50,10 @@ if (isset($_POST['opcion'])) { // en caso de haber una solicitud de tipo POST
         }
     }elseif ($opc=="desplegarLogin") { // si valor de opc es desplegar, traera pagina de login a index
         require_once('./views/login.php');
+    }elseif ($opc == "desplegarRegistro") {
+        require_once('./views/registroExterno.php');
+    }elseif($opc=="newRegistroExterno"){
+        require_once('./controllers/registroExternoController.php');
     }elseif($opc=="contactList"){
         date_default_timezone_set("America/Santiago");
         $fecha=date("Y-m-d H:i:s");
