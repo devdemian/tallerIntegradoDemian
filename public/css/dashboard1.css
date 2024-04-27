@@ -27,7 +27,7 @@ body {
 .sidebar {
   position: relative;
   width: 256px;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -212,6 +212,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 3% 3% 3%;
+  left: 50px;
+  font-size:medium;
+}
+.bienvenida{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 3% 3%;
   left: 50px;
   font-size:medium;
@@ -227,4 +235,7 @@ body {
 
 .evaluado {
   
+}
+.parrafoInfo1{
+  font-size: 20px;
 }

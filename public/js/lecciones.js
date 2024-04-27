@@ -2,6 +2,7 @@ function concepto(str){
     var leccion= str;
     var nodoMostrarConcepto=document.getElementById('mostrarConcepto');
     var nodoMostrarTitulo=document.getElementById('mostrarTitulo');
+    var nodoBorrarDiv=document.getElementById('bienvenida');
     var contenidosRecibidos = new Array();
      xmlhttp=new XMLHttpRequest();
      xmlhttp.onreadystatechange=function(){
@@ -9,6 +10,7 @@ function concepto(str){
             contenidosRecibidos=xmlhttp.responseText.split("-");
             nodoMostrarTitulo.innerHTML=contenidosRecibidos[0];
             nodoMostrarConcepto.innerHTML=contenidosRecibidos[1];
+            nodoBorrarDiv.innerHTML='';
         }
      }
      var cadenaParametros='concepto='+encodeURIComponent(leccion);

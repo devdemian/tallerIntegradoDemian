@@ -1,5 +1,8 @@
 <?php
 
+$usuario='Richard '; // vincular aca la sesion para hacer esto de forma dinamica
+include('./controllers/leccionContextoController.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,18 +34,45 @@
             </div>
             <div class="nav">
                 <div class="menu">
-                    <p class="title">Menu</p>
                     <ul>
                         <li>
                             <a href="#">
                                 <i class="icon ph-bold ph-house-simple"></i>
                                 <span class="text">Inicio </span>
                             </a>
+                            <a href="#">
+                                <i class="icon ph-bold ph-user"></i>
+                                <span class="text"><?php echo $usuario ?></span>
+                            </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="icon ph-bold ph-user"></i>
-                                <span class="text">Fundamentos de la programación</span>
+                                <i class="icon ph-bold ph-file-text"></i>
+                                <span class="text"> Curso 1 - Fundamentos de la programaci&oacute;n</span>
+                                <i class="arrow ph-bold ph-caret-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#" onclick="concepto('1')">
+                                        <span class="text">Leccion 1 - ¿ Que es la programaci&oacute;n ?</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="concepto('2')">
+                                        <span class="text">Leccion 2 - Variables en programacion</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Leccion 3 - Operadores</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-file-text"></i>
+                                <span class="text">Curso 2 - Programación I</span>
                                 <i class="arrow ph-bold ph-caret-down"></i>
                             </a>
                             <ul class="sub-menu">
@@ -58,31 +88,10 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="text">Lección 3</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="text">Lección 4</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="text">Lección 5</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="text">Lección 6</span>
+                                        <span class="text">Leccion 3 - Operadores</span>
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="active">
-                            <a href="#">
-                                <i class="icon ph-bold ph-file-text"></i>
-                                <span class="text">Mensajes</span>
-                            </a>
                         </li>
                         <li>
                             <a href="#">
@@ -143,6 +152,9 @@
             </div>
         </div>
         <div class="credits">
+            <div class="bienvenida" id="bienvenida">
+                <?php bienvenida($usuario)?>
+            </div>
             <div class="concepto">
                 <h2 class="tituloLeccion" id="mostrarTitulo"></h2>
                 <p id="mostrarConcepto"></p>
