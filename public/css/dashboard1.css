@@ -204,24 +204,27 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vh;
   margin: 0 1%;
   color: #fff;
   font-size: 25px;
 }
-.credits > div{
-  flex: 1;
-  height:100vh;
-  width: 100%;
-}
 .concepto {
-  background-color: var(--color-primario); /* Color de fondo para el div concepto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3% 3%;
+  left: 50px;
+  font-size:medium;
+}
+.tituloLeccion{
+  font-size: 30px;
+  padding-bottom: 3%;
 }
 
 .guiado {
-  background-color: var(--color-secundario); /* Color de fondo para el div guiado */
+ 
 }
 
 .evaluado {
-  background-color: var(--color-terciario); /* Color de fondo para el div evaluado */
+  
 }
