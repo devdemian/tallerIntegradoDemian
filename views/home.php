@@ -15,7 +15,6 @@
 
 
 <body>
-
     <!-- Secciòn inicio -->
     <span class="sombra">
         <section id="inicio" class="inicio">
