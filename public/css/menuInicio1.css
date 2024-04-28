@@ -331,14 +331,14 @@ body{
     transition: .3s;
 }
 .trabajos .galeria .item .info h3{
-    font-size: 20px;
+    font-size: 30px;
     color: #000;
     margin-bottom: 13px;
 }
 .trabajos .galeria .item .info p{
     color: #8d8d8d;
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0 3px;
     padding:  0 5px;
 }
@@ -349,6 +349,14 @@ body{
     color: #007be5;
     font-weight: bold;
 }
+
+.trabajos .galeria .item .info span{
+    font-weight: 900;
+}
+.trabajos .galeria .item .info li{
+    font-size: 12;
+}
+
 .trabajos .galeria .item:hover .info{
     opacity: 1;
     top: 0;

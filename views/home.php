@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/css/menuInicio.css">
+    <link rel="stylesheet" href="./public/css/menuInicio1.css">
 </head>
 
 
@@ -139,41 +139,38 @@
         </nav> -->
 
         <div class="galeria">
-
-
             <div class="item disenio">
-                <img src="./public/img/bot1.png" alt="">
+                <img src="./public/img/fundamento.png" alt="">
                 <div class="info">
-                    <h3>Titulo del Trabajo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus nam, similique ut obcaecati ipsa sit excepturi
-                        libero illo reprehenderit blanditiis.
-                    </p>
-                    <a href="#">Ver Trabajo</a>
+                    <h3>Fundamento de Programación</h3>
+                    <p>Con este tutorial vas aprender los <span>principios de la programación</span> 
+                        los conceptos esenciales que todo programador debe conoce, 
+                        aprenderas lo que es un <span>algoritmo</span>, lo que es un <span>lenguaje de programación</span> 
+                        donde y como escribir tus codigos de programación,
+                        aprenderas <span>variables y tipos de datos</span>, <span>depuración y pruebas</span> para poder resolver errores </p>
+                    <form id="redes2" class="m-2" method="post" action="#">
+                        <input type="hidden" name="opcion" value="desplegarRegistro">
+                        <button class="btn btn-warning">Registrate</button>
+                    </form>
                 </div>
             </div>
             <div class="item programacion">
-                <img src="./public/img/bot1.png" alt="">
+                <img src="./public/img/proximamente.png" alt="">
                 <div class="info">
                     <h3>Titulo del Trabajo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus nam, similique ut obcaecati ipsa sit excepturi
-                        libero illo reprehenderit blanditiis.
-                    </p>
-                    <a href="#">Ver Trabajo</a>
+                    <li style="font-size: 12px;"><span>HTML (HyperText Markup Language)</span>: Es un lenguaje de marcado que nos permite 
+                        definir la estructura de una página web. Con HTML, creamos 
+                        la base de la página, incluyendo títulos, párrafos, imágenes, 
+                        enlaces y más. Es como el esqueleto de una página web</li>
+                    <li style="font-size: 12px;"><span>CSS (Cascading Style Sheets)</span> es un 
+                    lenguaje informático que se utiliza para dar formato y estilo a las páginas web.
+                     Trabaja en conjunto con el HTML (Hypertext Markup Language) para definir cómo 
+                     se presentan los documentos en un navegador web.
+                    </li>
+                    <a href="#">proximamente</a>
                 </div>
             </div>
-            <div class="item programacion">
-                <img src="./public/img/bot1.png" alt="">
-                <div class="info">
-                    <h3>Titulo del Trabajo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus nam, similique ut obcaecati ipsa sit excepturi
-                        libero illo reprehenderit blanditiis.
-                    </p>
-                    <a href="#">Ver Trabajo</a>
-                </div>
-            </div>
+            
         </div>
     </section>
 
