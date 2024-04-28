@@ -16,7 +16,7 @@
 
 <body>
 
-    <!-- Secciòn INICIO esto es un cambio -->
+    <!-- Secciòn imicio -->
     <span class="sombra">
         <section id="inicio" class="inicio">
             <div class="contenido">
