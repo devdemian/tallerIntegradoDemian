@@ -16,7 +16,7 @@
 
 <body>
 
-    <!-- Secciòn inicio para el richard -->
+    <!-- Secciòn inicio -->
     <span class="sombra">
         <section id="inicio" class="inicio">
             <div class="contenido">
