@@ -24,7 +24,7 @@ body{
 .inicio{
     background:linear-gradient(to right, var(--color-terciario), var(--color-secundario));
     clip-path: polygon(0 0, 100% 0, 100% 46%, 67% 80%, 0 65%);
-    height: 120vh;
+    height: 100vh;
     padding:  0 20px;
 }
 .inicio .contenido{
@@ -55,11 +55,15 @@ body{
     padding: 5px 10px;
     text-transform: uppercase;
     border: 2px solid transparent;
+    
 }
 #inicio header nav a:hover{
     border-bottom: 2px solid var(--color-primario);
 }
-.inicio .redes a{
+.inicio .redes {
+    display: flex;
+    justify-content:center;
+    align-items: center;
     font-size: 20px;
     text-decoration: none;
     color: #fff;
@@ -67,10 +71,6 @@ body{
     margin: 0 10px;
 }
 
-
-.inicio .redes a:hover{
-    color: var(--color-primario);
-}
 .inicio .fila{
     display: flex;
     margin-top: 50px;
@@ -109,18 +109,15 @@ body{
     transform: scale(1.1);
 }
 #icono-nav{
+    margin-bottom: 170px;
     height: 30px;
     width: 30px;
     text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
     transition: .3s;
     cursor: pointer;
     display: none;
 }
-#icono-nav:hover{
-    background-color: #3e3e3e;
-}
+
 .sombra{
     filter:drop-shadow(0em 30px 20px var(--color-terciario));
 }
@@ -132,44 +129,43 @@ body{
     color: var(--color-primario);
     font-size: 60px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
 }
+
+
 
 .servicios{
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
-    position: relative;
-    top: -170px;
-    z-index: 10;
 }
 .servicios .fila{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .servicios .fila .col{
     margin: 10px;
     text-align: center;
     width: 30%;
+    margin-bottom: 50px;
 }
 .servicios .fila .col .card{
     border: 1px solid #8d8d8d;
-    height: 400px;
-    background-color: #fff;
+    background-image: url(../img/fonfo-vertical.png);
+    background-size:100%;
     padding: 30px;
     border-radius: 20px;
-    position: relative;
 }
 .servicios .icono{
-    width: 70px;
-    height: 70px;
+    width: 190px;
+    height: 190px;
     margin: auto;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    
 }
 .servicios .icono .circulo{
     width: 90%;
@@ -182,31 +178,44 @@ body{
     color: #fff;
     font-size: 20px;
 }
+
+.servicios .icono .circulo img{
+    width: 100px;
+}
+
 .color1{
-    background: linear-gradient(#ff9900, #ff5b00);
+    background: linear-gradient(var(--color-primario), var(--color-terciario));
 }
 .color2{
-    background: linear-gradient(#038aee, #0039a9);
+    background: linear-gradient(var(--color-secundario), var(--color-primario));
 }
 .color3{
-    background: linear-gradient(#04e2ee, #017795);
+    background: linear-gradient(var(--color-secundario), var(--color-primario));
+    
 }
 .servicios h3{
     margin-bottom: 20px;
 }
 .servicios .card p{
+    height:auto;
     color: #8d8d8d;
     line-height: 28px;
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: 600;
 }
 .servicios .card a{
     text-decoration: none;
     color: #008cff;
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+
+
+
 /* seccion HABILIDADES */
 .curso{
     background:linear-gradient(var(--color-primario), var(--color-terciario));
@@ -346,11 +355,11 @@ body{
 }
 /* SECCIÓN C O N T A C T O */
 .contacto{
-    background:linear-gradient(var(--color-terciario), var(--color-titulos));
-        background-size: cover;
-        color: var(--color-primario);
-        margin-top: 100px;
-        padding: 80px 20px;
+    background:linear-gradient(to right, var(--color-terciario), var(--color-secundario));
+    background-size: cover;
+    color: var(--color-primario);
+    margin-top: 100px;
+    padding: 80px 20px;
 }
 .contacto .contenedor-contacto{
     max-width: 1100px;
@@ -369,21 +378,21 @@ body{
 }
 .contacto .contenedor-contacto .info{
     margin-bottom: 30px;
-    border-left: 3px solid #dc6307;
+    border-left: 3px solid var(--color-primario);
     padding-left: 8px;
 }
 .contacto .contenedor-contacto .info p{
-    color: #8d8d8d;
+    color: white;
 }
 .contacto input, .contacto textarea{
     width: 100%;
     border: none;
     background-color: transparent;
     padding: 10px;
-    border: 1px solid #8d8d8d ;
+    border: 1px solid var(--color-primario) ;
     margin-bottom: 20px;
     outline: none;
-    color: #ff5b00;
+    color: white;
 }
 .contacto .btn{
     background-color: none;
@@ -395,13 +404,17 @@ body{
 }
 
 footer{
-    background-color: #000;
-    color: #fff;
-    padding: 7px 0;
-    font-size: 14px;
+    background-color: white;
+    color: #000;
+    padding: 25px 0;
+    font-size: 20px;
     text-align: center;
+    position: relative;
 }
-
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+}
 /* SECCION RESPONSIVE */
 @media screen and (max-width:1180px){
     .inicio{
@@ -409,9 +422,15 @@ footer{
     }
 }
 @media screen and (max-width:800px){
-    .redes{
+    #redes{
+        margin-top: 40px;
+        width: 10px;
+        
+    }
+    #redes2{
         display: none;
     }
+    
     #nav{
         display: none;
     }
@@ -430,10 +449,12 @@ footer{
         z-index: 99;
     }
     #nav.responsive a{
-        font-size: 30px;
+        font-size: 25px;
     }
     #icono-nav{
         display: block;
+       
+        padding-top: 40px;
     }
 
     .inicio{
@@ -452,6 +473,14 @@ footer{
     .inicio .fila .col .contenedor-img{
         width: 50%;
         margin-top: 30px;
+    }
+    .inicio .fila .col a{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        width: 70%;
+        text-decoration: none;
+
     }
 
     .servicios{
@@ -487,9 +516,145 @@ footer{
     .contacto .fila .col .info{
         float: left;
         font-size: 12px;
-        width: 25%;
+        width: 40%;
     }
 }
 .iconoCerrarSesion{
   width: 48px;
+}
+
+/*CSS DEL BOTON FLOTANTE*/
+
+.btn-wsp img{
+    position:fixed;
+    width:110px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    text-align:center;
+    font-size:35px;
+    transition: all 300ms ease;
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+
+#toolpin{
+    position: fixed;
+    right:-100px;
+    bottom: 110px;
+    transform: translate(-50%);
+    background-color: var(--color-primario);
+    color: #fff;
+    white-space: nowrap;
+    padding: 3px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+}
+
+#toolpin::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%);
+    border: 15px solid;
+    border-color: var(--color-primario) #0000 #0000 #0000;
+}
+
+#tool:hover #toolpin{
+    
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__title{
+    font-size: 2.5rem;
+}
+
+.modal__paragraph{
+    margin-bottom: 10px;
+}
+
+.modal__img{
+    width: 40%;
+    max-width: 300px;
+}
+
+.modal__close{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--color-secundario);
+    padding: 10px 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close:hover{
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+}
+
+
+@media (max-width:800px) {
+    
+
+    .modal__container{
+        padding: 2em 1.5em;
+    }
+
+    .modal__title{
+        font-size: 2rem;
+    }
 }
