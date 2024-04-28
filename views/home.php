@@ -17,7 +17,7 @@
 <body>
 
 
-    <!-- Secciòn INICIO  demian  -->
+    <!-- INICIO DE SESION  -->
     <span class="sombra">
         <section id="inicio" class="inicio">
             <div class="contenido">
