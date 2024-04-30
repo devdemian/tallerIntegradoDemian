@@ -21,6 +21,7 @@
                         <div class="col-lg-6">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
+                                <a href="index.php"><img src="./public/img/cerrar.png" alt=""></a>
                                     <a href="./index.php">
                                         <img class="rounded mx-auto d-block" src="../public/img/bot1.png" alt="" height="60px">
                                     </a>
@@ -85,11 +86,9 @@
                     </div>
                 </div>
             </main>
-            <form action="Index.php">
-                <input type="submit" value="ir a inicio">
-            </form>
+            
         </div>
-        <div id="layoutAuthentication_footer">
+        <div id="layoutAuthentication_footer" style="margin-top: 30px;">
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
