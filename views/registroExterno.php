@@ -29,9 +29,13 @@
                                 </div>
                                 <div class="card-body">
                                     <?php
-                                    if (isset($textoRegistro)) {
+                                    
+                                    if (isset($texto)) {
+                                        echo $texto;
+                                    } elseif (isset($textoRegistro)) {
                                         echo $textoRegistro;
                                     }
+                                
                                     ?>
                                     <form  method="POST" action="#">
                                         <div class="row m-2">

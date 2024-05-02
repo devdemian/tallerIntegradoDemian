@@ -100,10 +100,20 @@ function validarut($rut){
         return "Campo vacio, porfavor digite su RUT";
     }
 }
-function armarPass($rut, $nombre){
-    $iniNombre=$nombre[0];
-    $clave=$rut.$iniNombre;
-    return $clave;
+function armarPass() {
+    $longitud=10;
+    $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    $contrasena = '';
+    $longitud_caracteres = strlen($caracteres);
+    for ($i = 0; $i < $longitud; $i++) {
+        $index = rand(0, $longitud_caracteres - 1);
+        $contrasena .= $caracteres[$index];
+    }
+    return $contrasena;
+}
+function hashearPass($contrasena) {
+    return hash('sha256', $contrasena);
 }
 
 

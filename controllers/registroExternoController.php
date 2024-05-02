@@ -6,7 +6,8 @@ $confirmacion=validarut($rutUsuario);
 if($confirmacion=='ok'){
     $aregloNewContacto=array();
     $aregloContacto[0]=$_POST['rut'];
-    $aregloContacto[1]= armarPass($_POST['rut'], $_POST['nombre']);
+    $claveIngresada=armarPass();//medida de seguridad Nº 2
+    $aregloContacto[1]= hashearPass($claveIngresada);// medida de seguridad Nº1
     $aregloContacto[2]=$_POST['nombre'];
     $aregloContacto[3]=$_POST['apellidop'];
     $aregloContacto[4]=$_POST['apellidom'];
@@ -20,7 +21,7 @@ if($confirmacion=='ok'){
     $textoRegistro="";
     $textoRegistro=false;
     if($usuarioN=='ok'){
-        $textoRegistro="Registro exitoso, tu usuario Es".$aregloContacto[0]." y tu clave es: ".$aregloContacto[1]."";
+        $textoRegistro="Registro exitoso, tu usuario Es".$aregloContacto[0]." y tu clave es: ".$claveIngresada."";
         require_once('./views/login.php');
     }else{
         $textoRegistro="ups, hubo un error, intenta nuevamente";
