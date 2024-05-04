@@ -20,6 +20,16 @@ class accesModel
         }
         return $this->usuario;
     }
+    public function sumarIntento($arre){
+        $str= mysqli_query($this->db, "update perfiles set intentos= ".$arre[1]." where rut='".$arre[0]."'");
+        if($str == false){
+            $respuestaUpdateIntento="Error de actualizacion";
+        }else{
+            $respuestaUpdateIntento="ok";
+        }
+        return $respuestaUpdateIntento;
+          
+    }
 }
 class userContacto
 {
@@ -67,7 +77,7 @@ class nuevoUsuario{
     }
     public function insertarNuevoUsuario($arreglo){
         $arre=$arreglo;
-        $str= mysqli_query($this->db, "INSERT INTO perfiles (rut, pass, nombre, apellidop, apellidom, edad, email, telefono, nivel) VALUES ('".$arre[0]."', '".$arre[1]."', '".$arre[2]."', '".$arre[3]."', '".$arre[4]."', '".$arre[5]."', '".$arre[6]."', '".$arre[7]."', '".$arre[8]."')");
+        $str= mysqli_query($this->db, "INSERT INTO perfiles (rut, pass, nombre, apellidop, apellidom, edad, email, telefono, nivel, intentos) VALUES ('".$arre[0]."', '".$arre[1]."', '".$arre[2]."', '".$arre[3]."', '".$arre[4]."', '".$arre[5]."', '".$arre[6]."', '".$arre[7]."', '".$arre[8]."', '".$arre[9]."')");
         if($str == false){
             $respuestaIngresoNew="Error de Ingreso";
         }else{

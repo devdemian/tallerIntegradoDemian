@@ -105,13 +105,15 @@ function armarPass() {
     $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
     $contrasena = '';
-    $longitud_caracteres = strlen($caracteres);
+    $longitud_caracteres = strlen($caracteres);//largo de de la cadena de caracteres 
     for ($i = 0; $i < $longitud; $i++) {
-        $index = rand(0, $longitud_caracteres - 1);
-        $contrasena .= $caracteres[$index];
+        $index = rand(0, $longitud_caracteres - 1);// genera un numero para seleccionar el caracter 
+        $contrasena .= $caracteres[$index];// concatenacion de los caracteres
     }
     return $contrasena;
 }
+
+
 function hashearPass($contrasena) {
     return hash('sha256', $contrasena);
 }

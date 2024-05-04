@@ -15,6 +15,7 @@ if($confirmacion=='ok'){
     $aregloContacto[6]=$_POST['email'];
     $aregloContacto[7]=$_POST['telefono'];
     $aregloContacto[8]=2;
+    $aregloContacto[9]=0;
     require_once("./models/accesModel.php");// trae accessModel
     $nuevoUsuario = new nuevoUsuario();
     $usuarioN = $nuevoUsuario->insertarNuevoUsuario($aregloContacto);//array de la consulta
