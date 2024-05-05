@@ -19,7 +19,7 @@ try {
     $mail->Host= 'smtp-mail.outlook.com'; //local
     $mail->SMTPAuth   = true;                                   
     $mail->Username   = 'r_eduardo_cc@outlook.com';   //local
-    $mail->Password   = 'Monos123.';  // local
+    $mail->Password   = '';  // local
     $mail->SMTPSecure = 'tls';  //local                          
     $mail->Port       = 587;  //local                 
 
