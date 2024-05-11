@@ -1,10 +1,13 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-$nombre=$_POST['nombre'];
-$apellido=$_POST['apellido'];
-$email=$_POST['email'];
-$texto=$_POST['mensaje'];
+
+$aregloContacto[2];//nombre
+$aregloContacto[3];//apellido
+$claveIngresada;//clave
+$aregloContacto[0];//rut usuario
+$aregloContacto[6];
+
 
 require './PHPMailer/Exception.php';
 require './PHPMailer/PHPMailer.php';
@@ -26,7 +29,7 @@ try {
     
     // Configuraci贸n del remitente y destinatario
     $mail->setFrom('drokuas@gmail.com', 'ColegaBot');//local
-    $mail->addAddress($email);
+    $mail->addAddress($aregloContacto[6]);
     /* $mail->addAddress($email); */ 
     //Content email
     $dir = 'C:\xampp\htdocs\proyectos\tallerIntegrado\public\img\logoColegaBot2.png';
@@ -48,25 +51,25 @@ try {
                         <div>
                         <img src="cid:imagen_cid" alt="Imagen" width="200px">
                         </div>
-                        <h2>¡Gracias por ponerte en contacto con nosotros!</h2>
-                        <p>Estimado(a) '.$nombre.',</p>
+                        <h2>¡Gracias por Registrarte!</h2>
+                        <p>Estimado(a) '.$aregloContacto[2].',</p>
                         <p>Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
                         <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%;">
                             <tr>
                                 <td style="background-color: #f2f2f2;"><strong>Nombre:</strong></td>
-                                <td>'.$nombre.'</td>
+                                <td>'.$aregloContacto[2].'</td>
                             </tr>
                             <tr>
                                 <td style="background-color: #f2f2f2;"><strong>Apellido:</strong></td>
-                                <td>'.$apellido.'</td>
+                                <td>'.$aregloContacto[3].'</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #f2f2f2;"><strong>Email:</strong></td>
-                                <td>'.$email.'</td>
+                                <td style="background-color: #f2f2f2;"><strong>Usuario:</strong></td>
+                                <td>'.$aregloContacto[0].'</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #f2f2f2;"><strong>Mensaje:</strong></td>
-                                <td>'.$texto.'</td>
+                                <td style="background-color: #f2f2f2;"><strong>Clave:</strong></td>
+                                <td>'.$claveIngresada.'</td>
                             </tr>
                         </table>
                         <p>Atentamente,</p>
@@ -77,16 +80,12 @@ try {
         </div>
     </body>
     </html>';
-    
-    
-
     $mail->Body    = $body;
 
     $mail->send();
-    $textoContactList= 'Gracias '.$nombre.' '.$apellido.' Por contactarnos, hemos recibido tu mensaje, responderemos pronto, Ademas recibiras una copia de tu solicitud en la direccion de correo que indicaste en el formulario.';
+    $textoContactList= 'Gracias '.$aregloContacto[2].' '.$aregloContacto[3].' Por Registrarte.';
 } catch (Exception $e) {
     $textoContactList= "Error en envio de correo, Intenta nuevamente";
 }
-require_once('./views/home.php');
-
+require('./views/registroExterno.php');
 ?>

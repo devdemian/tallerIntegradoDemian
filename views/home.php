@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/css/menuInicio1.css">
+    <link rel="stylesheet" href="./public/css/menuInicio.css">
 </head>
 
 
@@ -81,20 +81,19 @@
                         </div>
                     </div>
                     <h3>Qui&eacute;nes Somos</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Nam amet necessitatibus error delectus quod quos sit
-                        quaerat, ratione assumenda neque, sed deserunt asperiores
-                        quia possimus? Praesentium autem iste veniam a harum,
-                        cupiditate ducimus dolore quos, est tenetur omnis illo
-                        sunt dolores voluptates impedit aperiam! Unde nam et enim
-                        minus laudantium a rerum magni fugiat tenetur delectus
-                        quod dolorum quam eos officia at, repudiandae porro,
-                        provident laboriosam ipsam? Tempora enim dolorum quas
-                        similique vero ipsa aperiam veritatis nemo, sed modi
-                        quae cupiditate eius aliquam aliquid, iste debitis id
-                        excepturi doloremque cumque possimus! Odio quas error
-                        sed itaque eos delectus cumque aut.</p>
-
+                    <p>Somos un equipo de tres jóvenes apasionados por la enseñanza y
+                        el desarrollo web. Nos unimos con un propósito común,
+                        hacer que el aprendizaje de los fundamentos de la programación
+                        sea accesible y emocionante para todos.
+                        En un mundo cada vez más digitalizado, creemos que comprender
+                        los conceptos básicos de la programación es una habilidad
+                        fundamental. Sin embargo, reconocemos que para muchos, comenzar
+                        puede ser desafiante y abrumador. Es por eso que creamos nuestra
+                        aplicación web, con la misión de convertir la experiencia de aprendizaje
+                        en una emocionante aventura de descubrimiento.
+                        Nuestro enfoque se basa en tutoriales interactivos diseñados para guiar a
+                        nuestros usuarios en su viaje de aprendizaje y apoyar en todo momento.
+                    </p>
                     <!-- <a href="#">Leer Más</a> -->
                 </div>
             </div>
@@ -107,20 +106,23 @@
                         </div>
                     </div>
                     <h3>Misi&oacute;n y Visi&oacute;n</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Eveniet qui possimus, fugiat quis impedit aliquam
-                        veritatis sint voluptas tenetur et? Itaque nam excepturi
-                        architecto eos voluptas a maiores perspiciatis expedita,
-                        quod porro dolor sapiente quas dicta dolore? Labore quos
-                        quae suscipit esse dignissimos! Facilis nostrum debitis
-                        alias aliquid numquam. Fuga maiores consequuntur
-                        perferendis quo veniam amet ab, corrupti ad repellendus!
-                        Minima nemo, libero reprehenderit, nesciunt expedita
-                        doloremque quod dolorum enim unde, et sapiente error
-                        cumque tempore eum vel excepturi! Hic dolore sit ipsa
-                        tenetur laudantium cum saepe labore quam amet magni
-                        aliquam debitis eligendi corrupti nulla, expedita facilis
-                        cupiditate neque.
+                    <p><span style="font-weight: 700;">Misión:</span> En ColegaBot, nuestra misión es
+                        proporcionar una plataforma educativa interactiva y didáctica. Nos dedicamos
+                        a facilitar el acceso a la
+                        educación en programación, ofreciendo cursos estructurados y prácticos que
+                        ayudan a desarrollar habilidades sólidas en una amplia gama de usuarios,
+                        desde principiantes hasta programadores experimentados.
+                        <br>
+                        <br>
+                        <span style="font-weight: 700;">Visión:</span> Nos
+                        esforzamos por ser una fuente confiable de aprendizaje
+                        en el campo de la programación, inspirando a estudiantes
+                        de todas las edades a alcanzar sus metas en el
+                        mundo de la tecnología. Visualizamos un futuro donde la
+                        programación sea una habilidad fundamental y donde nuestra plataforma sea reconocida
+                        como líder.
+
+
                     </p>
 
                     <!-- <a href="#">Leer Más</a> -->
@@ -145,9 +147,9 @@
                 <img src="./public/img/fundamento.png" alt="">
                 <div class="info">
                     <h3>Fundamento de Programación</h3>
-                    <p>Con este tutorial vas aprender los <span>principios de la programación</span> 
-                        los conceptos esenciales que todo programador debe conoce, 
-                        aprenderas lo que es un <span>algoritmo</span>, lo que es un <span>lenguaje de programación</span> 
+                    <p>Con este tutorial vas aprender los <span>principios de la programación</span>
+                        los conceptos esenciales que todo programador debe conoce,
+                        aprenderas lo que es un <span>algoritmo</span>, lo que es un <span>lenguaje de programación</span>
                         donde y como escribir tus codigos de programación,
                         aprenderas <span>variables y tipos de datos</span>, <span>depuración y pruebas</span> para poder resolver errores </p>
                     <form id="redes2" class="m-2" method="post" action="#">
@@ -160,19 +162,19 @@
                 <img src="./public/img/proximamente.png" alt="">
                 <div class="info">
                     <h3>Titulo del Trabajo</h3>
-                    <li style="font-size: 12px;"><span>HTML (HyperText Markup Language)</span>: Es un lenguaje de marcado que nos permite 
-                        definir la estructura de una página web. Con HTML, creamos 
-                        la base de la página, incluyendo títulos, párrafos, imágenes, 
+                    <li style="font-size: 12px;"><span>HTML (HyperText Markup Language)</span>: Es un lenguaje de marcado que nos permite
+                        definir la estructura de una página web. Con HTML, creamos
+                        la base de la página, incluyendo títulos, párrafos, imágenes,
                         enlaces y más. Es como el esqueleto de una página web</li>
-                    <li style="font-size: 12px;"><span>CSS (Cascading Style Sheets)</span> es un 
-                    lenguaje informático que se utiliza para dar formato y estilo a las páginas web.
-                     Trabaja en conjunto con el HTML (Hypertext Markup Language) para definir cómo 
-                     se presentan los documentos en un navegador web.
+                    <li style="font-size: 12px;"><span>CSS (Cascading Style Sheets)</span> es un
+                        lenguaje informático que se utiliza para dar formato y estilo a las páginas web.
+                        Trabaja en conjunto con el HTML (Hypertext Markup Language) para definir cómo
+                        se presentan los documentos en un navegador web.
                     </li>
                     <a href="#">proximamente</a>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -302,64 +304,64 @@
         <div class="modal__container">
             <img src="./public/img/pregunta-respuesta.png" class="modal__img">
             <div id="principal" class=" container-sm bg-light" style="max-width: 800px;">
-                
+
                 <div class="accordion" id="accordionExample">
-    
-    
+
+
                     <div class="accordion-item my-4">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="bi bi-truck-flatbed"></i>
-                                <span class="px-3 text-info">Envios</span>
+                                <span class="px-3 text-info">Preguntas Frecuentes</span>
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <h2 class="fs-6 fw-semibold">1. ¿Dónde está mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">4. ¿Cómo sigo el envio?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
+                                <h2 class="fs-6 fw-semibold">1. ¿Qué tipo de contenido ofrece la plataforma?</h2>
+                                <div class="my-2">En nuestra plataforma, ofrecemos una amplia variedad de contenido educativo, que incluye tutoriales interactivos, ejercicios prácticos, proyectos guiados y recursos complementarios. Cubrimos desde los conceptos básicos hasta temas más avanzados en programación.</div>
+                                <h2 class="fs-6 fw-semibold">2. ¿Quiénes pueden beneficiarse de esta aplicación?</h2>
+                                <div class="my-2">Nuestra aplicación está diseñada para ser útil tanto para principiantes completos en programación como para aquellos con conocimientos previos que deseen ampliar sus habilidades. Nuestros tutoriales están estructurados para adaptarse a diferentes niveles de experiencia.</div>
+                                <h2 class="fs-6 fw-semibold">3. ¿Ofrecen certificados de finalización?</h2>
+                                <div class="my-2">Actualmente, estamos trabajando en la implementación de un sistema de certificación para aquellos usuarios que completen con éxito nuestros cursos y proyectos. Estén atentos a futuras actualizaciones en nuestra plataforma.</div>
+                                <h2 class="fs-6 fw-semibold">4. ¿Cómo puedo obtener ayuda si tengo preguntas o problemas técnicos?</h2>
+                                <div class="my-2">Si tienes alguna pregunta o encuentras algún problema técnico mientras usas nuestra plataforma, no dudes en ponerte en contacto con nuestro equipo de soporte técnico. Puedes enviar un correo electrónico a contacto@colegabot.cl y te ayudaremos a resolver cualquier problema que puedas tener.</div>
+                                <h2 class="fs-6 fw-semibold">5.  ¿La plataforma es gratuita?</h2>
+                                <div class="my-2">Sí, nuestra plataforma ofrece acceso gratuito a una amplia gama de contenido educativo. Sin embargo, también ofrecemos suscripciones premium que brindan acceso a características adicionales y contenido exclusivo.</div>
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- La segunda Categoria  -->
-    
+
                     <div class="accordion-item my-4">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <i class="bi bi-credit-card"></i>
-                                <span class="px-3 text-info">Pagos</span>
+                                <span class="px-3 text-info">Inicio de Sesión</span>
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <h2 class="fs-6 fw-semibold">1. ¿Dónde está mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">4. ¿Cómo sigo el envio?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
+                                <h2 class="fs-6 fw-semibold">1. ¿Cuál es tu nombre de usuario?</h2>
+                                <div class="my-2">Tu nonmbre de usuaruio es tu se entregara via correo electronico</div>
+                                <h2 class="fs-6 fw-semibold">2. ¿Cuál es tu clave de acceso?</h2>
+                                <div class="my-2">Tu clave de acceso se entregara dinamicamente via correo electronico.</div>
+                                <h2 class="fs-6 fw-semibold">3. ¿Tienes algún problema para iniciar sesión?</h2>
+                                <div class="my-2">No dudes en contactar a nuestro equipo de soporte</div>
+                                <h2 class="fs-6 fw-semibold">4. ¿Cómo me registro en ColegaBot?</h2>
+                                <div class="my-2">Dirigete al formulario de registro e ingresa los datos solicitados</div>
+                                <h2 class="fs-6 fw-semibold">5. ¿Cómo inicio sesión?</h2>
+                                <div class="my-2">Dirigete a inicio de sesión e ingresa tu usuario y clave que enviaron a su correo</div>
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- La tercera categoria  -->
-    
-                    <div class="accordion-item my-4">
+
+                    <!-- <div class="accordion-item my-4">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-    
+
                                 <i class="bi bi-arrow-return-left"></i>
                                 <span class="px-3 text-info">Devoluciones</span>
                             </button>
@@ -378,11 +380,11 @@
                                 <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
                             </div>
                         </div>
-                    </div>
-    
+                    </div> -->
+
                     <!-- La cuarta categoria  -->
-    
-                    <div class="accordion-item">
+
+                    <!-- <div class="accordion-item">
                         <h2 class="accordion-header" id="heading4">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                                 <i class="bi bi-percent"></i>
@@ -403,9 +405,9 @@
                                 <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
                             </div>
                         </div>
-                    </div>
-    
-    
+                    </div> -->
+
+
                 </div>
             </div>
             <a href="#" class="modal__close">Cerrar </a>
@@ -429,12 +431,18 @@
     <script src="./public/js/app.js"></script>
     <?php
     if (isset($textoContactList)) {
-        echo "<script >alert(\"$textoContactList\");</script>";
+        echo "
+        <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        <script>
+        Swal.fire({
+        title: 'Alerta',
+        text: '$textoContactList',
+        });
+        </script>
+        ";
     }
     ?>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./public/js/quienesSomos.js"></script>

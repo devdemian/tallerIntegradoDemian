@@ -49,13 +49,13 @@ include('./controllers/leccionContextoController.php');
                         <li>
                             <a href="#">
                                 <i class="icon ph-bold ph-file-text"></i>
-                                <span class="text"> Curso 1 - Fundamentos de la programaci&oacute;n</span>
+                                <span class="text"> admin</span>
                                 <i class="arrow ph-bold ph-caret-down"></i>
                             </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="#" onclick="concepto('1')">
-                                        <span class="text">Leccion 1 - ¿ Que es la programaci&oacute;n ?</span>
+                                    <a href="./pruebas.php" onclick="concepto('1')">
+                                        <span class="text">Ingresar Usuario</span>
                                     </a>
                                 </li>
                                 <li>

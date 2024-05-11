@@ -143,12 +143,14 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+
 }
 .servicios .fila .col{
     margin: 10px;
-    text-align: center;
+    text-align:justify;
     width: 30%;
     margin-bottom: 50px;
+    padding: 10px;
 }
 .servicios .fila .col .card{
     border: 1px solid #8d8d8d;

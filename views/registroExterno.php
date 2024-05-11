@@ -21,23 +21,29 @@
                         <div class="col-lg-6">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
-                                <a href="index.php"><img src="./public/img/cerrar.png" alt=""></a>
+                                    <a href="index.php"><img src="./public/img/cerrar.png" alt=""></a>
                                     <a href="./index.php">
-                                        <img class="rounded mx-auto d-block" src="../public/img/bot1.png" alt="" height="60px">
+                                        <img class="rounded mx-auto d-block" src="./public/img/bot1.png" alt="" height="60px">
                                     </a>
                                     <h3 class="text-center font-weight-light my-4">Registrate</h3>
                                 </div>
                                 <div class="card-body">
+
                                     <?php
-                                    
                                     if (isset($texto)) {
-                                        echo $texto;
+                                        echo "
+                                        <div class='alert alert-info' role='alert'>
+                                            $texto
+                                        </div>";
                                     } elseif (isset($textoRegistro)) {
-                                        echo $textoRegistro;
+                                        echo "
+                                        <div class='alert alert-info' role='alert'>
+                                            $textoRegistro
+                                        </div>";
                                     }
-                                
                                     ?>
-                                    <form  method="POST" action="#">
+
+                                    <form method="POST" action="#">
                                         <div class="row m-2">
                                             <div class="col">
                                                 <label for="rut" class="form-label">Rut</label>
@@ -90,7 +96,7 @@
                     </div>
                 </div>
             </main>
-            
+
         </div>
         <div id="layoutAuthentication_footer" style="margin-top: 30px;">
             <footer class="py-4 bg-light mt-auto">
@@ -121,6 +127,24 @@
             }
         }
     </script>
+    <?php
+if (isset($textoContactList)) {
+    // Mostrar la alerta utilizando SweetAlert2
+    echo "
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <script>
+    Swal.fire({
+        title: 'Registro Exitoso',
+        text: '$textoContactList',
+        }).then(() => {
+            // Redirigir a otra vista después de cerrar la alerta
+            window.location.href = './index.php';
+        });
+    </script>
+    ";
+}
+?>
+
 </body>
 
 </html>
