@@ -16,6 +16,7 @@ include('./controllers/leccionContextoController.php');
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./public/css/dashboard1.css" />
+    <link rel="stylesheet" href="./public/css/estiloEstudiante.css">
 
     <title>Menu Estudiante</title>
 </head>
@@ -155,9 +156,9 @@ include('./controllers/leccionContextoController.php');
             <div class="bienvenida" id="bienvenida">
                 <?php bienvenida($usuario)?>
             </div>
+            
             <div class="concepto">
-                <h2 class="tituloLeccion" id="mostrarTitulo"></h2>
-                <p id="mostrarConcepto"></p>
+                <p></p>
             </div>
             <div class="guiado">
                 <p></p>

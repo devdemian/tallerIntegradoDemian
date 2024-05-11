@@ -1,0 +1,23 @@
+.imagenStudy{
+    width: 90%;
+}
+.estudiar{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+}
+.imagenEstudiar, .textoEstudiar{
+    width: 50%;
+    padding: 2% 2%;
+}
+.textoEstudiar{
+    width: 50%;
+    height: 90%;
+    overflow: auto;
+}
+.listaIntro{
+    list-style-type:disc;
+}
+.itemListaIntro{
+    margin-top: 1%;
+}

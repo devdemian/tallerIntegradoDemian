@@ -7,7 +7,7 @@ if($confirmacion=='ok'){
     $aregloNewContacto=array();
     $aregloContacto[0]=$_POST['rut'];
     $claveIngresada=armarPass();//medida de seguridad Nº 2
-    $aregloContacto[1]= hashearPass($claveIngresada);// medida de seguridad Nº1
+    $aregloContacto[1]= hashearPass($claveIngresada);// medida de seguridad Nº3
     $aregloContacto[2]=$_POST['nombre'];
     $aregloContacto[3]=$_POST['apellidop'];
     $aregloContacto[4]=$_POST['apellidom'];
