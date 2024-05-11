@@ -1,5 +1,4 @@
 <?php
-
 $rutUsuario = $_POST['rut'];
 include('./controllers/funcionesController.php');
 $confirmacion=validarut($rutUsuario);
@@ -22,8 +21,10 @@ if($confirmacion=='ok'){
     $textoRegistro="";
     $textoRegistro=false;
     if($usuarioN=='ok'){
-        $textoRegistro="Registro exitoso, tu usuario Es".$aregloContacto[0]." y tu clave es: ".$claveIngresada."";
+        require_once('./controllers/registroMailerController.php');
         require_once('./views/login.php');
+        header("Location: ./views/login.php");
+    exit();
     }else{
         $textoRegistro="ups, hubo un error, intenta nuevamente";
         require_once('./views/registroExterno.php'); 

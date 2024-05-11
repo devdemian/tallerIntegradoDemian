@@ -10,6 +10,9 @@
     <title>login colega bot</title>
     <link rel="stylesheet" href="./public/css/estilos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
 </head>
 
 <body class="bg-primary">
@@ -23,18 +26,26 @@
                                 <div class="card-header">
                                     <a href="index.php"><img src="./public/img/cerrar.png" alt=""></a>
                                     <a href="./index.php">
-                                        <img class="rounded mx-auto d-block" src="../public/img/bot1.png" alt="" height="60px">
+                                        <img class="rounded mx-auto d-block" src="./public/img/bot1.png" alt="" height="60px">
                                     </a>
                                     <h3 class="text-center font-weight-light my-4">Inicia Sesión</h3>
                                 </div>
                                 <div class="card-body">
-                                    <?php
+
+                                <?php
                                     if (isset($texto)) {
-                                        echo $texto;
+                                        echo "
+                                        <div class='alert alert-info' role='alert'>
+                                            $texto
+                                        </div>";
                                     } elseif (isset($textoRegistro)) {
-                                        echo $textoRegistro;
+                                        echo "
+                                        <div class='alert alert-info' role='alert'>
+                                            $textoRegistro
+                                        </div>";
                                     }
                                     ?>
+                                        
                                     <form method="POST" action="#">
                                         <div class="form-group">
                                             <label class="small mb-1" for="inputEmailAddress">Usuario</label>
