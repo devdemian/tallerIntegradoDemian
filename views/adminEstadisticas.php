@@ -1,5 +1,5 @@
 <?php
-require_once './controllers/adminController.php'; // llamar al controlador adminController (Demian)
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,17 +12,15 @@ require_once './controllers/adminController.php'; // llamar al controlador admin
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="./public/css/dashboard.css" />
-    <link rel="stylesheet" href="./public/css/admin1.css" />
+    <link rel="stylesheet" href="./public/css/dashboard1.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css" />
     <title>Menu Administrador</title>
 </head>
 <?php
-
-if (isset($textoRegistro)) {
+if (isset($texto)) {
+    echo $texto;
+} elseif (isset($textoRegistro)) {
     echo $textoRegistro;
 }
 ?>
@@ -60,7 +58,7 @@ if (isset($textoRegistro)) {
                             </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="" onclick="concepto('1')">
+                                    <a href="#" onclick="concepto('1')">
                                         <span class="text">Ver Usuarios</span>
                                     </a>
                                 </li>
@@ -69,7 +67,7 @@ if (isset($textoRegistro)) {
                                         <span class="text">Agregar o modificar usuarios</span>
                                     </a>
                                 </li>
-
+                        
                             </ul>
                         </li>
                         <li>
@@ -80,7 +78,7 @@ if (isset($textoRegistro)) {
                             </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="./views/adminContenido.php" onclick="concepto('1')">
+                                    <a href="#" onclick="concepto('1')">
                                         <span class="text">Ver Contenido</span>
                                     </a>
                                 </li>
@@ -113,31 +111,8 @@ if (isset($textoRegistro)) {
                                         <span class="text">Reporte Estudiantes aprobados</span>
                                     </a>
                                 </li>
+
                             </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class=""></i>
-                                <span class="text"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class=""></i>
-                                <span class="text"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class=""></i>
-                                <span class="text"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class=""></i>
-                                <span class="text"></span>
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -160,27 +135,24 @@ if (isset($textoRegistro)) {
                 </ul>
             </div>
         </div>
-        <div class="credits">
-
-
             <div class="contenedor-formulario">
-                <button class="btn btn-success" id="toggleForm">Mostrar/ocultar formulario Usuario</button>
+                <button class="btn btn-success" id="toggleForm">Mostrar/ocultar formulario contenido</button>
                 <div class="formulario">
 
                     <div class="container">
-                        <h2 style="text-align: center; margin: 20px">Formulario Usuario</h2>
+                        <h2>Formulario Contenido</h2>
                         <form action="#" method="POST">
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="rut">RUT:</label>
-                                        <input class="form-control" type="text" name="rut" required onChange="validar(this)">
+                                        <input class="form-control" type="text" name="rut" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="nombre">Nombre:</label>
-                                        <input class="form-control" type="text" name="nombre" required onChange="validar(this)">
+                                        <input class="form-control" type="text" name="nombre" required>
                                     </div>
                                 </div>
                             </div>
@@ -188,13 +160,13 @@ if (isset($textoRegistro)) {
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="apellidop">Apellido Paterno:</label>
-                                        <input class="form-control" type="text" name="apellidop" required onChange="validar(this)">
+                                        <input class="form-control" type="text" name="apellidop" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="apellidom">Apellido Materno:</label>
-                                        <input class="form-control" type="text" name="apellidom" required onChange="validar(this)">
+                                        <input class="form-control" type="text" name="apellidom" required>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +174,7 @@ if (isset($textoRegistro)) {
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="edad">Edad:</label>
-                                        <input class="form-control" type="number" name="edad" required onChange="validar(this)">
+                                        <input class="form-control" type="number" name="edad" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -216,13 +188,13 @@ if (isset($textoRegistro)) {
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="telefono">Teléfono:</label>
-                                        <input class="form-control" type="text" name="telefono" required onChange="validar(this)">
+                                        <input class="form-control" type="text" name="telefono" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="nivel">Nivel:</label>
-                                        <select class="form-select" id="nivel" name="nivel" required onChange="validar(this)">
+                                        <select class="form-select" id="nivel" name="nivel" required>
                                             <option value="1">Nivel 1</option>
                                             <option value="2">Nivel 2</option>
                                         </select>
@@ -243,59 +215,8 @@ if (isset($textoRegistro)) {
                     </div>
                 </div>
             </div>
-
-            <!-- <h2 class="tituloLeccion" id="mostrarTitulo"></h2>
-                <p id="mostrarConcepto"></p> -->
-            <!-- </div> -->
-            <div class="tablita">
-                <table id="tbl_empleados" class="table" style="width: 100%;">
-                    <thead class="thead-dark">
-                        <tr style="text-align: center;" class="titulo">
-                            <th scope="col" style="color:#000000">RUT</th>
-                            <th scope="col" style="color:#000000">Nombre</th>
-                            <th scope="col" style="color:#000000">Apellido Paterno</th>
-                            <th scope="col" style="color:#000000">Apellido Materno</th>
-                            <th scope="col" style="color:#000000">Edad</th>
-                            <th scope="col" style="color:#000000">Email</th>
-                            <th scope="col" style="color:#000000">Teléfono</th>
-                            <th scope="col" style="color:#000000">Nivel</th>
-                            <th scope="col" style="color:#000000">Modificar</th>
-                            <th scope="col" style="color:#000000">Eliminar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($perfiles as $perfil) { ?>
-                            <tr>
-                                <td><?php echo $perfil['rut']; ?> </td>
-                                <td><?php echo $perfil['nombre']; ?> </td>
-                                <td><?php echo $perfil['apellidop']; ?></td>
-                                <td><?php echo $perfil['apellidom']; ?> </td>
-                                <td><?php echo $perfil['edad']; ?> </td>
-                                <td><?php echo $perfil['email']; ?> </td>
-                                <td><?php echo $perfil['telefono']; ?> </td>
-                                <td><?php echo $perfil['nivel']; ?> </td>
-                                <td>
-                                    <form action="#" method="post">
-                                        <input type="hidden" name="opcion" value="usuarioAdmin">
-                                        <input type="hidden" name="accion" value="modificardatos">
-                                        <input type="hidden" name="rut" value="">
-                                        <button type="submit" class="btn btn-warning">Modificar</button>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form action="#" method="post">
-                                        <input type="hidden" name="opcion" value="usuarioAdmin">
-                                        <input type="hidden" name="accion" value="eliminar">
-                                        <input type="hidden" name="rut" value="<?php echo $perfil['rut']; ?>">
-                                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                                    </form>
-                                </td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-            </div>
         </div>
+
     </div>
 
     <script>
@@ -309,24 +230,12 @@ if (isset($textoRegistro)) {
             }
         }
     </script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous"></script>
+    <script src="./public/js/dashboard.js"></script>
+    <script src="./public/js/lecciones.js"></script>
     <script src="./public/js/admin.js"></script>
-    <script src=" https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
-    <script>
-        $("#tbl_empleados").DataTable({
-            pageLength: 10,
-            language: {
-                url: "https://cdn.datatables.net/plug-ins/1.10.25/i18n/Spanish.json",
-            },
-        });
-    </script>
-
-
-
 
 </body>
 
 </html>
-<!-- Inicializa DataTables en tu tabla -->
