@@ -26,9 +26,8 @@ if($confirmacion=='ok'){
                     require_once("./models/accesModel.php");
                     $updateIntento = new accesModel();
                     $updateIntento = $updateIntento->sumarIntento($arreUpdateIntento);
-
                     $texto="validado nivel 1";
-                    require_once './views/admin.php';
+                    require_once './views/admin.php'; // llamar a la vista admin.php (Demian)
                     $opc="";
                     $_POST=array();
                 }elseif($claveHasheada==$user['pass'] & $user['nivel']=='2'){// comparo clave y nivel
@@ -68,8 +67,7 @@ if($confirmacion=='ok'){
                 }  
             }
         }
-    }   
-
+    }
 }else{
     $texto=validarut($rutUsuario);
     require_once './views/login.php';

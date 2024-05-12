@@ -20,6 +20,8 @@ if (isset($_POST['opcion'])) {
         require_once('./controllers/registroExternoController.php'); //Ejecuta controller registroExterno
     }elseif($opc=="contactList"){
         require_once('./controllers/contactListController.php'); //ejecuta controller contactList
+    }elseif($opc=="usuarioAdmin"){
+        require_once('./controllers/adminController.php');//ejecutar controller admin (Demian)
     }
 }else{
     require_once('./views/home.php'); //pinta home
