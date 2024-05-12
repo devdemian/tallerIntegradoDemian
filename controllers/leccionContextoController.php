@@ -1,10 +1,9 @@
 <?php
 function bienvenida($str){
-    $saludo='<p class="parrafoInfo1">Hola '.$str.' nos complace saludarte y darte la Bienvenida a tu espacio de programacion,
-    es aca donde visualizaras y realizaras las diferentes lecciones de cada uno de los cursos disponibles, podras ver tus avances, 
-    podras repetir las lecciones previamente aprobadas para reforzar tus conocimientos y lo mas 
-    importante; ColegaBot te acompañara en cada uno d los ejercicios y evaluaciones para que tu
-    aprendizaje sea lo mas facil posible</p>
+    $saludo='<p class="parrafoInfo1">Hola '.$str.' nos complace saludarte y darte la Bienvenida a tu espacio de programación, es acá 
+    donde visualizaras y realizaras las diferentes lecciones de cada uno de los cursos disponibles, podrás ver tus avances, podrás 
+    repetir las lecciones previamente aprobadas para reforzar tus conocimientos y lo más importante; ColegaBot te acompañará en cada 
+    uno de los ejercicios y evaluaciones para que tu aprendizaje sea lo más fácil posible</p>
     <br>
     <div class="estudiar">
         <div class="imagenEstudiar"><img class = "imagenStudy"src="./public/img/study.jpg" alt="palabra study en scarble"></div>
@@ -20,7 +19,13 @@ function bienvenida($str){
             </ul>
         </div>
     </div>
-    <h3>Recomendaciones para asegurar el exito eurso que estaspor comenzar.</h3>';
+    <h3 class="textoRecomendaciones">Recomendaciones para asegurar el exito curso que estas por comenzar.</h3>
+    <ol class="ListaRecomendaciones">
+        <li class="itemRecomendaciones">Aunque el sitio está optimizado para verse en dispositivos móviles, lo ideal es realizar los cursos en una pc portátil o una pc de escritorio</li>
+        <li class="itemRecomendaciones">Fija un horario y un plazo de tiempo en el cual estarás dedicado en la realización del curso, recuerda que no es la cantidad de tiempo, sino la constancia y disciplina.</li>
+        <li class="itemRecomendaciones">Te recomendamos alejar elementos distractores y silenciar notificaciones de redes sociales mientras realizas los cursos.</li>
+        </ol>';
+    
     echo $saludo;
 }
 $conceptoUno="¿ Que es la Programación ?-La programación es el proceso de diseñar, escribir, probar y mantener el código informático para crear software, 

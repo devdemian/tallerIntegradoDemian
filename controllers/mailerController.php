@@ -16,20 +16,30 @@ try {
     // Configuraci贸n del servidor SMTP
     $mail->isSMTP();
                                                 
+    /* CONFIGURACION PARA SMTP LOCAL DE ALEXIS
+    
     $mail->Host = 'smtp.gmail.com'; //local
     $mail->SMTPAuth   = true;                                   
     $mail->Username = 'drokuas@gmail.com';
     $mail->Password = 'ofgybgurwfrxiktj';
     $mail->SMTPSecure = 'tls';  //local                          
-    $mail->Port       = 587;  //local                 
+    $mail->Port       = 587;  //local   */    
+    
+    /* CONFIGURACION PARA SMTP LOCAL DE RICHARD*/
+    $mail->Host = 'smtp-mail.outlook.com'; //local
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username = 'r_eduardo_cc@outlook.com';
+    $mail->Password = 'Monos123.';
+    $mail->SMTPSecure = 'tls';  //local                          
+    $mail->Port       = 587;  //local
 
     
     // Configuraci贸n del remitente y destinatario
-    $mail->setFrom('drokuas@gmail.com', 'ColegaBot');//local
+    $mail->setFrom('r_eduardo_cc@outlook.com', 'ColegaBot');//local
     $mail->addAddress($email);
     /* $mail->addAddress($email); */ 
     //Content email
-    $dir = 'C:\xampp\htdocs\proyectos\tallerIntegrado\public\img\logoColegaBot2.png';
+    $dir = 'C:\xampp\htdocs\public\img\logoColegaBot2.png';
     $mail->AddEmbeddedImage($dir, 'imagen_cid', 'imagen.png');
     $mail->isHTML(true);
     $mail->Subject = 'Contacto a colegaBot';

@@ -2,6 +2,7 @@
 
 $usuario='Richard '; // vincular aca la sesion para hacer esto de forma dinamica
 include('./controllers/leccionContextoController.php');
+/*require_once('./controllers/estudianteController.php');*/
 
 ?>
 <!DOCTYPE html>
@@ -47,11 +48,6 @@ include('./controllers/leccionContextoController.php');
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon ph-bold ph-file-text"></i>
-                                <span class="text"> admin</span>
-                                <i class="arrow ph-bold ph-caret-down"></i>
-                            </a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="./pruebas.php" onclick="concepto('1')">
@@ -158,13 +154,16 @@ include('./controllers/leccionContextoController.php');
             </div>
             
             <div class="concepto">
-                <p></p>
+                
+            </div>
+            <div class="configuracion">
+                
             </div>
             <div class="guiado">
-                <p></p>
+                
             </div>
             <div class="evaluado">
-                <p></p>
+                
             </div>
         </div>
     </div>
