@@ -27,7 +27,15 @@ try {
     $mail->SMTPSecure = 'tls';  //local                          
     $mail->Port       = 587;  //local  */               
 
-     /* CONFIGURACION PARA SMTP LOCAL DE RICHARD*/
+     /* CONFIGURACION PARA SMTP LOCAL DE RICHARD
+     $mail->Host = 'smtp-mail.outlook.com'; //local
+     $mail->SMTPAuth   = true;                                   
+     $mail->Username = 'r_eduardo_cc@outlook.com';
+     $mail->Password = 'Monos123.';
+     $mail->SMTPSecure = 'tls';  //local                          
+     $mail->Port       = 587;  //local*/
+
+    /* CONFIGURACION PARA SMTP LOCAL DE Demian*/
      $mail->Host = 'smtp-mail.outlook.com'; //local
      $mail->SMTPAuth   = true;                                   
      $mail->Username = 'r_eduardo_cc@outlook.com';
@@ -40,7 +48,8 @@ try {
     $mail->addAddress($aregloContacto[6]);
     /* $mail->addAddress($email); */ 
     //Content email
-    $dir = 'C:\xampp\htdocs\public\img\logoColegaBot2.png';
+    //$dir = 'C:\xampp\htdocs\public\img\logoColegaBot2.png'; ruta local richard
+    $dir= 'C:\wamp64\www\htdocs\tallerIntegradoDemian\public\img\bot1.png';
     $mail->AddEmbeddedImage($dir, 'imagen_cid', 'imagen.png');
     $mail->isHTML(true);
     $mail->Subject = 'Contacto a colegaBot';

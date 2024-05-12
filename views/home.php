@@ -81,7 +81,6 @@
                         </div>
                     </div>
                     <h3>Qui&eacute;nes Somos</h3>
-<<<<<<< Updated upstream
                     <p>Somos un equipo de tres jóvenes apasionados por la enseñanza y
                         el desarrollo web. Nos unimos con un propósito común,
                         hacer que el aprendizaje de los fundamentos de la programación
@@ -95,15 +94,6 @@
                         Nuestro enfoque se basa en tutoriales interactivos diseñados para guiar a
                         nuestros usuarios en su viaje de aprendizaje y apoyar en todo momento.
                     </p>
-=======
-                    <p>Es una plataforma en línea diseñada para ayudar a estudiantes de programación
-                         a aprender de manera efectiva y divertida. Su enfoque se centra en brindar un aprendizaje
-                          estructurado y guiado, adaptado tanto para principiantes como para aquellos con conocimientos básicos.
-                           Con lecciones claras y ejercicios prácticos, el objetivo es proporcionar a los usuarios las habilidades
-                            necesarias para convertirse en programadores competentes. En ColegaBot, se cree en la accesibilidad
-                             y la excelencia educativa.</p>
-
->>>>>>> Stashed changes
                     <!-- <a href="#">Leer Más</a> -->
                 </div>
             </div>
@@ -116,7 +106,6 @@
                         </div>
                     </div>
                     <h3>Misi&oacute;n y Visi&oacute;n</h3>
-<<<<<<< Updated upstream
                     <p><span style="font-weight: 700;">Misión:</span> En ColegaBot, nuestra misión es
                         proporcionar una plataforma educativa interactiva y didáctica. Nos dedicamos
                         a facilitar el acceso a la
@@ -134,16 +123,6 @@
                         como líder.
 
 
-=======
-                    <p>Misión: Se dedica a proporcionar a estudiantes de programación
-                         una plataforma educativa interactiva y didáctic, facilitar el aprendizaje
-                          de la programación con cursos estructurados y prácticos, ayudando a desarrollar
-                           habilidades sólidas de manera accesible.
-                        <br>
-                        Visión: Busca ser una fuente confiable de aprendizaje,
-                         inspirando a los estudiantes a alcanzar sus metas en la programacion,
-                          aspiramos a ser la opción preferida para aprender programación de manera efectiva y divertida.
->>>>>>> Stashed changes
                     </p>
 
                     <!-- <a href="#">Leer Más</a> -->
@@ -333,16 +312,11 @@
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="bi bi-truck-flatbed"></i>
-<<<<<<< Updated upstream
                                 <span class="px-3 text-info">Preguntas Frecuentes</span>
-=======
-                                <span class="px-3 text-info">Acceso</span>
->>>>>>> Stashed changes
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-<<<<<<< Updated upstream
                                 <h2 class="fs-6 fw-semibold">1. ¿Qué tipo de contenido ofrece la plataforma?</h2>
                                 <div class="my-2">En nuestra plataforma, ofrecemos una amplia variedad de contenido educativo, que incluye tutoriales interactivos, ejercicios prácticos, proyectos guiados y recursos complementarios. Cubrimos desde los conceptos básicos hasta temas más avanzados en programación.</div>
                                 <h2 class="fs-6 fw-semibold">2. ¿Quiénes pueden beneficiarse de esta aplicación?</h2>
@@ -353,18 +327,6 @@
                                 <div class="my-2">Si tienes alguna pregunta o encuentras algún problema técnico mientras usas nuestra plataforma, no dudes en ponerte en contacto con nuestro equipo de soporte técnico. Puedes enviar un correo electrónico a contacto@colegabot.cl y te ayudaremos a resolver cualquier problema que puedas tener.</div>
                                 <h2 class="fs-6 fw-semibold">5.  ¿La plataforma es gratuita?</h2>
                                 <div class="my-2">Sí, nuestra plataforma ofrece acceso gratuito a una amplia gama de contenido educativo. Sin embargo, también ofrecemos suscripciones premium que brindan acceso a características adicionales y contenido exclusivo.</div>
-=======
-                                <h2 class="fs-6 fw-semibold">1. ¿Cómo me registro en ColegaBot?</h2>
-                                <div class="my-2">Para registrarte, ve a la página de inicio y haz clic en "Registrarse". Luego, sigue las instrucciones para completar el proceso de registro.</div>
-                                <h2 class="fs-6 fw-semibold">2. ¿Qué pasa si pierdo mi contraseña?</h2>
-                                <div class="my-2">Si olvidaste tu contraseña, puedes restablecerla haciendo clic en "¿Olvidaste tu contraseña?" en la página de inicio de sesión. Se te enviará un enlace para restablecer tu contraseña a tu correo electrónico registrado.</div>
-                                <h2 class="fs-6 fw-semibold">3. ¿Recibiré una confirmación después de registrarme?</h2>
-                                <div class="my-2">Sí, recibirás un correo electrónico de confirmación después de completar el proceso de registro en ColegaBot. Asegúrate de verificar tu bandeja de entrada (y también la carpeta de correo no deseado) para encontrar el correo de confirmación.</div>
-                                <h2 class="fs-6 fw-semibold">4. ¿Qué debo hacer si mi cuenta está bloqueada?</h2>
-                                <div class="my-2">Si tu cuenta está bloqueada, comunícate con nuestro equipo de soporte a través de [correo electrónico de contacto] para obtener asistencia adicional.</div>
-                                <h2 class="fs-6 fw-semibold">5. ¿Puedo acceder a mi cuenta de ColegaBot desde varios dispositivos?</h2>
-                                <div class="my-2">Sí, puedes acceder a tu cuenta de ColegaBot desde cualquier dispositivo con acceso a internet. Solo necesitas tu correo electrónico y contraseña para iniciar sesión.</div>
->>>>>>> Stashed changes
                             </div>
                         </div>
                     </div>
@@ -380,7 +342,6 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-<<<<<<< Updated upstream
                                 <h2 class="fs-6 fw-semibold">1. ¿Cuál es tu nombre de usuario?</h2>
                                 <div class="my-2">Tu nonmbre de usuaruio es tu se entregara via correo electronico</div>
                                 <h2 class="fs-6 fw-semibold">2. ¿Cuál es tu clave de acceso?</h2>
@@ -391,18 +352,6 @@
                                 <div class="my-2">Dirigete al formulario de registro e ingresa los datos solicitados</div>
                                 <h2 class="fs-6 fw-semibold">5. ¿Cómo inicio sesión?</h2>
                                 <div class="my-2">Dirigete a inicio de sesión e ingresa tu usuario y clave que enviaron a su correo</div>
-=======
-                                <h2 class="fs-6 fw-semibold">1. ¿Cómo me registro en ColegaBot?</h2>
-                                <div class="my-2">Para registrarte, ve a la página de inicio y haz clic en "Registrarse". Luego, sigue las instrucciones para completar el proceso de registro.</div>
-                                <h2 class="fs-6 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">4. ¿Cómo sigo el envio?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
-                                <h2 class="fs-6 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
-                                <div class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odit.</div>
->>>>>>> Stashed changes
                             </div>
                         </div>
                     </div>
