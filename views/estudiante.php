@@ -2,8 +2,8 @@
 
 $usuario='Richard '; // vincular aca la sesion para hacer esto de forma dinamica
 include('./controllers/leccionContextoController.php');
-/*require_once('./controllers/estudianteController.php');*/
-
+require_once('./controllers/estudianteController.php');
+echo("curso= ".$arrayCL[0]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,9 +48,14 @@ include('./controllers/leccionContextoController.php');
                             </a>
                         </li>
                         <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-file-text"></i>
+                                <span class="text">Curso 2 - Programación I</span>
+                                <i class="arrow ph-bold ph-caret-down"></i>
+                            </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="./pruebas.php" onclick="concepto('1')">
+                                    <a href="" onclick="concepto('1')">
                                         <span class="text">Ingresar Usuario</span>
                                     </a>
                                 </li>
