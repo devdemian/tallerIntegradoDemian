@@ -18,6 +18,7 @@ $mail = new PHPMailer(true);
 try {
     // Configuraci贸n del servidor SMTP
     $mail->isSMTP();
+<<<<<<< Updated upstream
              
 
      //CONFIGURACION PARA SMTP LOCAL DE RICHARD
@@ -30,13 +31,28 @@ try {
 
     
 
+=======
+                                                
+    $mail->Host = 'smtp.gmail.com'; //local
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username = 'drokuas@gmail.com';
+    $mail->Password = 'ofgybgurwfrxiktj';
+    $mail->SMTPSecure = 'tls';  //local                          
+    $mail->Port       = 587;  //local                 
+
+    
+>>>>>>> Stashed changes
     // Configuraci贸n del remitente y destinatario
-    $mail->setFrom('r_eduardo_cc@outlook.com', 'ColegaBot');//local
+    $mail->setFrom('drokuas@gmail.com', 'ColegaBot');//local
     $mail->addAddress($aregloContacto[6]);
     /* $mail->addAddress($email); */ 
     //Content email
+<<<<<<< Updated upstream
     $dir = 'C:\xampp\htdocs\public\img\logoColegaBot2.png'; //ruta local richard
     //$dir= 'C:\wamp64\www\htdocs\tallerIntegradoDemian\public\img\bot1.png'; ruta local demian 
+=======
+    $dir = 'C:\xampp\htdocs\proyectos\tallerIntegrado\public\img\logoColegaBot2.png';
+>>>>>>> Stashed changes
     $mail->AddEmbeddedImage($dir, 'imagen_cid', 'imagen.png');
     $mail->isHTML(true);
     $mail->Subject = 'Contacto a colegaBot';
@@ -109,3 +125,20 @@ require('./views/registroExterno.php');
      $mail->SMTPSecure = 'tls';  //local                          
      $mail->Port       = 587;  //local*/
 ?>
+
+
+<!--  CONFIGURACION PARA SMTP LOCAL DE RICHARD
+$mail->Host = 'smtp-mail.outlook.com'; //local
+$mail->SMTPAuth   = true;                                   
+$mail->Username = 'r_eduardo_cc@outlook.com';
+$mail->Password = 'Monos123.';
+$mail->SMTPSecure = 'tls';  //local                          
+$mail->Port       = 587;  //local -->
+
+<!-- CONFIGURACION PARA SMTP LOCAL DE Demian*/
+$mail->Host = 'smtp-mail.outlook.com'; //local
+$mail->SMTPAuth   = true;                                   
+$mail->Username = 'r_eduardo_cc@outlook.com';
+$mail->Password = 'Monos123.';
+$mail->SMTPSecure = 'tls';  //local                          
+$mail->Port       = 587;  //local -->
