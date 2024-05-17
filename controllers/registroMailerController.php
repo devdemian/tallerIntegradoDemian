@@ -18,14 +18,7 @@ $mail = new PHPMailer(true);
 try {
     // Configuraci贸n del servidor SMTP
     $mail->isSMTP();
-    
-    /*CONFIGURACION PARA SMTP LOCAN ALEXIS
-    $mail->Host = 'smtp.gmail.com'; //local
-    $mail->SMTPAuth   = true;                                   
-    $mail->Username = 'drokuas@gmail.com';
-    $mail->Password = 'ofgybgurwfrxiktj';
-    $mail->SMTPSecure = 'tls';  //local                          
-    $mail->Port       = 587;  //local  */               
+             
 
      //CONFIGURACION PARA SMTP LOCAL DE RICHARD
      $mail->Host = 'smtp-mail.outlook.com'; //local
@@ -35,13 +28,7 @@ try {
      $mail->SMTPSecure = 'tls';  //local                          
      $mail->Port       = 587;  //local
 
-    /* CONFIGURACION PARA SMTP LOCAL DE Demian
-     $mail->Host = 'smtp-mail.outlook.com'; //local
-     $mail->SMTPAuth   = true;                                   
-     $mail->Username = 'r_eduardo_cc@outlook.com';
-     $mail->Password = 'Monos123.';
-     $mail->SMTPSecure = 'tls';  //local                          
-     $mail->Port       = 587;  //local*/
+    
 
     // Configuraci贸n del remitente y destinatario
     $mail->setFrom('r_eduardo_cc@outlook.com', 'ColegaBot');//local
@@ -105,4 +92,20 @@ try {
     $textoContactList= "Error en envio de correo, Intenta nuevamente";
 }
 require('./views/registroExterno.php');
+ 
+    /*CONFIGURACION PARA SMTP LOCAN ALEXIS
+    $mail->Host = 'smtp.gmail.com'; //local
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username = 'drokuas@gmail.com';
+    $mail->Password = 'ofgybgurwfrxiktj';
+    $mail->SMTPSecure = 'tls';  //local                          
+    $mail->Port       = 587;  //local  */     
+
+    /* CONFIGURACION PARA SMTP LOCAL DE Demian
+     $mail->Host = 'smtp-mail.outlook.com'; //local
+     $mail->SMTPAuth   = true;                                   
+     $mail->Username = 'r_eduardo_cc@outlook.com';
+     $mail->Password = 'Monos123.';
+     $mail->SMTPSecure = 'tls';  //local                          
+     $mail->Port       = 587;  //local*/
 ?>

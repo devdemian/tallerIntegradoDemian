@@ -16,14 +16,7 @@ try {
     // Configuraci贸n del servidor SMTP
     $mail->isSMTP();
                                                 
-    /* CONFIGURACION PARA SMTP LOCAL DE ALEXIS
-    
-    $mail->Host = 'smtp.gmail.com'; //local
-    $mail->SMTPAuth   = true;                                   
-    $mail->Username = 'drokuas@gmail.com';
-    $mail->Password = 'ofgybgurwfrxiktj';
-    $mail->SMTPSecure = 'tls';  //local                          
-    $mail->Port       = 587;  //local   */    
+        
     
     /* CONFIGURACION PARA SMTP LOCAL DE RICHARD*/
     $mail->Host = 'smtp-mail.outlook.com'; //local
@@ -99,4 +92,21 @@ try {
 }
 require_once('./views/home.php');
 
+
+/* CONFIGURACION PARA SMTP LOCAL DE Demian
+     $mail->Host = 'smtp-mail.outlook.com'; //local
+     $mail->SMTPAuth   = true;                                   
+     $mail->Username = 'r_eduardo_cc@outlook.com';
+     $mail->Password = 'Monos123.';
+     $mail->SMTPSecure = 'tls';  //local                          
+     $mail->Port       = 587;  //local*/
+
+     /* CONFIGURACION PARA SMTP LOCAL DE ALEXIS
+    
+    $mail->Host = 'smtp.gmail.com'; //local
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username = 'drokuas@gmail.com';
+    $mail->Password = 'ofgybgurwfrxiktj';
+    $mail->SMTPSecure = 'tls';  //local                          
+    $mail->Port       = 587;  //local   */
 ?>
