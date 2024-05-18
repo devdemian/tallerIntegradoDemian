@@ -19,7 +19,7 @@ require_once './controllers/adminController.php'; // llamar al controlador admin
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="./public/css/dashboard1.css" />
+    <link rel="stylesheet" href="./public/css/dashboard.css" />
     <link rel="stylesheet" href="./public/css/admin1.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -79,7 +79,7 @@ require_once './controllers/adminController.php'; // llamar al controlador admin
                                         <form action="#" method="post">
                                             <input type="hidden" name="opcion" value="usuarioAdmin">
                                             <input type="hidden" name="accion" value="eliminar">
-                                            <input type="hidden" name="rut" value="<?php echo $perfil['rut']; ?>">
+                                            <input type="hidden" name="rut" value="">
                                             <button type="submit" class="btn btn-danger">Eliminar</button>
                                         </form>
                                     </a>
@@ -150,6 +150,94 @@ require_once './controllers/adminController.php'; // llamar al controlador admin
             </div>
         </div>
         <div class="credits">
+            <div class="contenedor-formulario">
+                <form action="#" method="POST">
+                    <input type="hidden" name="opcion" value="estadistica">
+                    <button class="btn btn-success">Estadisticas</button>
+                </form>
+                <button class="btn btn-success" id="toggleForm">Mostrar/ocultar formulario Usuario</button>
+                <div class="formulario">
+
+                    <div class="container">
+                        <h2 style="text-align: center; margin: 20px">Formulario Usuario</h2>
+                        <form action="#" method="POST">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="rut">RUT:</label>
+                                        <input class="form-control" type="text" name="rut" required onChange="validar(this)" value="<?php echo $rut; ?>">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="nombre">Nombre:</label>
+                                        <input class="form-control" type="text" name="nombre" required onChange="validar(this)" value="<?php echo $nombre; ?>">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="apellidop">Apellido Paterno:</label>
+                                        <input class="form-control" type="text" name="apellidop" required onChange="validar(this)" value="<?php echo $apellidop; ?>">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="apellidom">Apellido Materno:</label>
+                                        <input class="form-control" type="text" name="apellidom" required onChange="validar(this)" value="<?php echo $apellidom; ?>">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="edad">Edad:</label>
+                                        <input class="form-control" type="number" name="edad" required onChange="validar(this)" value="<?php echo $edad; ?>">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Email:</label>
+                                        <input class="form-control" type="email" name="email" required value="<?php echo $email; ?>">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="telefono">Teléfono:</label>
+                                        <input class="form-control" type="text" name="telefono" required onChange="validar(this)" value="<?php echo $telefono; ?>">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="nivel">Nivel:</label>
+                                        <select class="form-select" id="nivel" name="nivel" required onChange="validar(this)">
+                                            <option value="1" <?php if ($nivel == 1) echo "selected"; ?>>Nivel 1</option>
+                                            <option value="2" <?php if ($nivel == 2) echo "selected"; ?>>Nivel 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <input type="hidden" name="opcion" value="usuarioAdmin">
+                                <input type="hidden" name="accion">
+                                <div class="col-auto mb-2">
+                                    <input class="btn btn-success" type="submit" name="accion" value="insertar">
+                                </div>
+                                <div class="col-auto mb-2">
+                                    <input class="btn btn-warning" type="submit" name="accion" value="modificar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <h2 class="tituloLeccion" id="mostrarTitulo"></h2>
+                <p id="mostrarConcepto"></p> -->
+            <!-- </div> -->
             <div class="tablita">
                 <table id="tbl_empleados" class="table" style="width: 100%;">
                     <thead class="thead-dark">
@@ -178,7 +266,22 @@ require_once './controllers/adminController.php'; // llamar al controlador admin
                                 <td><?php echo $perfil['email']; ?> </td>
                                 <td><?php echo $perfil['telefono']; ?> </td>
                                 <td><?php echo $perfil['nivel']; ?> </td>
-                                
+                                <td>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="opcion" value="usuarioAdmin">
+                                        <input type="hidden" name="accion" value="modificardatos">
+                                        <input type="hidden" name="rut" value="<?php echo $perfil['rut']; ?>">
+                                        <button type="submit" class="btn btn-warning" id="toggleForm">Modificar</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="opcion" value="usuarioAdmin">
+                                        <input type="hidden" name="accion" value="eliminar">
+                                        <input type="hidden" name="rut" value="<?php echo $perfil['rut']; ?>">
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                    </form>
+                                </td>
                             </tr>
                         <?php } ?>
                     </tbody>

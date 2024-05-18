@@ -9,6 +9,14 @@ $textoRegistro = false; // Inicializar la variable de registro
 
 
 if (!empty($_POST)) {
+    $rut = "";
+    $nombre = "";
+    $apellidop = "";
+    $apellidom = "";
+    $edad = "";
+    $email = "";
+    $telefono = "";
+    $nivel = "";
     // Verificar la existencia de las claves en $_POST antes de acceder a ellas
     if (isset($_POST['accion'])) {
         $acc = $_POST['accion'];
@@ -91,10 +99,9 @@ if (!empty($_POST)) {
                 $email = $usuario['email'];
                 $telefono = $usuario['telefono'];
                 $nivel = $usuario['nivel'];
-
-                require_once './views/admin.php';
+        
+                require_once './views/admin.php'; // Mostrar el formulario con los datos cargados
             } else {
-
                 $textoRegistro = "Error: Falta el RUT del usuario";
             }
         } elseif ($acc == 'insertarContenido') {

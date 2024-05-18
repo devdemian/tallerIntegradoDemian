@@ -22,6 +22,8 @@ if (isset($_POST['opcion'])) {
         require_once('./controllers/contactListController.php'); //ejecuta controller contactList
     }elseif($opc=="usuarioAdmin"){
         require_once('./controllers/adminController.php');//ejecutar controller admin (Demian)
+    }elseif($opc=="estadistica"){
+        require_once('./views/adminEstadisticas.php');
     }
 }else{
     require_once('./views/home.php'); //pinta home
